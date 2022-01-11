@@ -1,0 +1,166 @@
+html{
+    height:100%;
+}
+
+body{
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    margin: 0;
+    color: #fff;
+}
+
+.bg{
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #8153e8 50%, #ef236d 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+
+.bg2{
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+
+.bg3{
+    animation-duration:5s;
+}
+
+.card-custom{
+    background-color:rgba(255,255,255,.5);
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    position:relative;
+    border: 2px solid #0c0c0c;
+    width: 100%;
+    height: 425px;
+    overflow: hidden;
+}
+
+h1{
+    font-family:monospace;
+    font-size: 56px;
+}
+
+@keyframes slide{
+    0%{transform:translateX(-25%);}
+    100%{transform:translateX(25%);}
+}
+
+.text-animation-1{
+    position: relative;
+    /* font-family: sans-serif; */
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #8153e8, #fff, #ef236d);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 4s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+.text-animation-2{
+    position: relative;
+    /* font-family: sans-serif; */
+    text-transform: uppercase;
+    /* font-size: 2em;
+    letter-spacing: 4px; */
+    overflow: hidden;
+    background: linear-gradient(90deg, #fff, #fff, #ef236d);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 6s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+
+.text-animation-3 {animation: blink 1s linear infinite;}
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}
+
+.model-img {
+    vertical-align: middle;
+    border-style: none;
+    height: 100%;
+    max-width: auto;
+    object-fit:cover;
+}
+
+.model-isim{
+    font-size: 32px;
+    color: #0c0c0c;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    z-index: 2;
+}
+
+.model-numara{
+    font-size: 28px;
+    color: #b60747;
+    position: absolute;
+    left: 10px;
+    bottom: 39px;
+    z-index: 2;
+}
+.model-dahili{
+    font-size: 24px;
+    color: #ef236d;
+    position: absolute;
+    left: 10px;
+    bottom: 81px;
+    z-index: 2;
+}
+
+.online{
+    position: absolute;
+    left: 10px;
+    bottom: 140px;
+    z-index: 2;
+    background-color: #24FF24;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #000;
+    padding: 2px 10px;
+    font-size: .9em;
+    border-radius: 20px;
+}
+
+.offline{
+    position: absolute;
+    left: 10px;
+    bottom: 140px;
+    z-index: 2;
+    background-color: #C61A06;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 10px;
+    font-size: .9em;
+    border-radius: 20px;
+}
